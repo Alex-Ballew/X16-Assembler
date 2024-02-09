@@ -1,4 +1,4 @@
-### C-X16 Assembler Project History
+# C-X16 Assembler Project History
 
 My favorite project (currently) while a student at Western Washington Univeristy in the Computer Science Major. This project was given to me and my fellow students by professor See-Mong Tan while in his Computer Systems I class.
 
