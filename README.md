@@ -6,7 +6,7 @@ My favorite project (currently) while a student at Western Washington Univeristy
 
 The xas.c file is an assembler for the X16, which can write and compile assembler code written in X16 assembler into binary objects that could be load an run by an emulator.
 
-### Test file example, the following test loops written in assembly
+### Test file example, the following test loops
  
 <pre>begin:
         add %r1, %r0, $10 <br>
@@ -23,7 +23,10 @@ star:
 newline:
         val $10    # ASCII 10 is the \n character </pre>
 
-### Output file would include:
+### Output file and explanation:
+
+The file produced by the example has a series of 16-bit words stored in Big Endian format. The first word is 0x3000, the location to load the program. It is always that value, since our assembler only produces users programs. Then there are 5 instructions for (add, ..., halt) followed by two 16-bit data values of 42 and 10 respectively.
+
 <pre>
 0001 0010 0010 1010
 0010 0000 0000 0101
