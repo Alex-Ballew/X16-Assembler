@@ -16,7 +16,7 @@ The xas.c program accepts exactly one argument, the name of the assembler file t
 <pre> make </pre>
 
 <b>To run:</b>
-<pre> ./xas filename</pre>
+<pre>./xas test/[filename].x16s</pre>
 
 
 ### Test file example, the following test loops
