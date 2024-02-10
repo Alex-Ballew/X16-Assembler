@@ -7,20 +7,17 @@ My favorite project (currently) while a student at Western Washington Univeristy
 The following is an assembler for the X16, which can write and compile assembler code written in X16 assembler into binary objects that could be load an run by an emulator.
 
 ### Test file example, the following test loops written in assembly
-
-<pre> begin:
+ 
+<pre>begin:
         add %r1, %r0, $10 <br>
-
 start1:
         ld  %r0, star
         putc
         add %r1, %r1, $-1
         brz stop
         jsr start1
-
 stop:
         halt
-
 star:
         val $42    # ASCII 42 is the * charactger
 newline:
