@@ -12,6 +12,8 @@ The xas.c file is an assembler for the X16, which can write and compile assemble
 
 The xas.c program accepts exactly one argument, the name of the assembler file to process, and produces the output file a.obj. However, for the purpose of demonstration I've modified the code such that it will not only produce the file a.obj, but also print the contents (the 16 bit instructions) to the terminal. Moreover, the program will return 0 on success, 1 if no file was specified, 2 for any other error messages.
 
+<b> System requirements: make uses GNU commands, so it must be compiled on a Linux machine or Linux based platfrom (shell) </b>
+
 <b>Compile with:</b>
 <pre> make </pre>
 
