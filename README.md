@@ -12,6 +12,14 @@ The xas.c file is an assembler for the X16, which can write and compile assemble
 
 The xas.c program accepts exactly one argument, the name of the assembler file to process, and produces the output file a.obj. However, for the purpose of demonstration I've modified the code such that it will not only produce the file a.obj, but also print the contents to the terminal. Moreover, the program will return 0 on success, 1 if no file was specified, 2 for any other error messages.
 
+<b>Compile with:</b>
+<pre>gcc -c bits.c
+gcc -c instrucion.c
+gcc bits.o instruction.o xas.o -o xas </pre>
+
+<b>To run:</b>
+<pre> ./xas filename</pre>
+
 
 ### Test file example, the following test loops
  
