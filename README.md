@@ -4,7 +4,7 @@ My favorite project (currently) while a student at Western Washington Univeristy
 
 ## C-X16 Assembler
 
-The following is an assembler for the X16, which can write and compile assembler code written in X16 assembler into binary objects that could be load an run by an emulator.
+The xas.c file is an assembler for the X16, which can write and compile assembler code written in X16 assembler into binary objects that could be load an run by an emulator.
 
 ### Test file example, the following test loops written in assembly
  
