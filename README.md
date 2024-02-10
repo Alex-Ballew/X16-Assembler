@@ -6,7 +6,7 @@ My favorite project (currently) while a student at Western Washington Univeristy
 
 The xas.c file is an assembler for the X16, which can write and compile assembler code written in X16 assembler into binary objects that could be load an run by an emulator.
 
-**NOTE: The **
+<b>**NOTE: Instuction.c and Instruction.h were provided by professor See-Mong, but everything else is my own creation (bits.c, bits.h, xas.c) **</b>
 
 ### Test file example, the following test loops
  
