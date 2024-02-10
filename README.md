@@ -27,9 +27,10 @@ newline:
 
 ### Output file and explanation:
 
-The file produced by the example has a series of 16-bit words stored in Big Endian format. The first word is 0x3000, the location to load the program. It is always that value, since our assembler only produces users programs. Then there are 5 instructions for (add, ..., halt) followed by two 16-bit data values of 42 and 10 respectively.
+The file produced by the example has a series of 16-bit words stored in Big Endian format. The first word is 0x3000, the location to load the program. It is always that value, since our assembler only produces users programs. Then there are 5 instructions for (add, ..., halt) followed by two 16-bit data values of 42 and 10 respectively (bit values are formatted for readability).
 
 <pre>
+0011 0000 0000 0000 
 0001 0010 0010 1010
 0010 0000 0000 0101
 1111 0000 0010 0001
@@ -38,5 +39,6 @@ The file produced by the example has a series of 16-bit words stored in Big Endi
 0100 1111 1111 1011
 1111 0000 0010 0101
 0000 0000 0010 1010
+0000 0000 0000 1010
 </pre>
 
