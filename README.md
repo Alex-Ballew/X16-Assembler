@@ -4,13 +4,16 @@ My favorite project (currently) while a student at Western Washington Univeristy
 
 ## C-X16 Assembler
 
-The xas.c file is an assembler for the X16, which can write and compile assembler code written in X16 assembler into binary objects that could be load an run by an emulator.
+The xas.c file is an assembler for the X16, which can write and compile assembler code written in X16 assembler into binary objects that could be load an run by an emulator. 
 
 <b>**NOTE: Instuction.c and Instruction.h were provided by professor See-Mong, but everything else is my own creation (bits.c, bits.h, xas.c) **</b>
 
-### Test file example, the following test loops
+### How to run/returns: ###
 
-how to run: 
+The xas.c program accepts exactly one argument, the name of the assembler file to process, and produces the output file a.obj. However, for the purpose of demonstration I've modified the code such that it will not only produce the file a.obj, but also print the contents to the terminal. Moreover, the program will return 0 on success, 1 if no file was specified, 2 for any other error messages.
+
+
+### Test file example, the following test loops
  
 <pre>begin:
         add %r1, %r0, $10 <br>
