@@ -6,11 +6,11 @@ My favorite project (currently) while a student at Western Washington Univeristy
 
 The xas.c file is an assembler for the X16, which can write and compile assembler code written in X16 assembler into binary objects that could be load an run by an emulator. 
 
-<b>**NOTE: The assembler is in file xas.c, all other files work to fill in the binary instructions with the information I provided via emit function calls,these files to do so were provided by professor See-Mong **</b>
+<b>**Important Note: The assembler is in file xas.c, I wrote some of the other files (bits.c) and did some of the code in the other files, however most of the code in these other files were provided by professor See-Mong. These files take infomation provided by me from xas (all my code) and fill in the binary instruction via emit_ calls **</b>
 
 ### How to run/returns: ###
 
-The xas.c program accepts exactly one argument, the name of the assembler file to process, and produces the output file a.obj. However, for the purpose of demonstration I've modified the code such that it will not only produce the file a.obj, but also print the contents to the terminal. Moreover, the program will return 0 on success, 1 if no file was specified, 2 for any other error messages.
+The xas.c program accepts exactly one argument, the name of the assembler file to process, and produces the output file a.obj. However, for the purpose of demonstration I've modified the code such that it will not only produce the file a.obj, but also print the contents (the 16 bit instructions) to the terminal. Moreover, the program will return 0 on success, 1 if no file was specified, 2 for any other error messages.
 
 <b>Compile with:</b>
 <pre> make </pre>
@@ -19,7 +19,7 @@ The xas.c program accepts exactly one argument, the name of the assembler file t
 <pre>./xas test/[filename].x16s</pre>
 
 
-### Test file example, the following test loops
+### Test file example, the following test loops:
  
 <pre>begin:
         add %r1, %r0, $10 <br>
