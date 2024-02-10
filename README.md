@@ -9,6 +9,8 @@ The xas.c file is an assembler for the X16, which can write and compile assemble
 <b>**NOTE: Instuction.c and Instruction.h were provided by professor See-Mong, but everything else is my own creation (bits.c, bits.h, xas.c) **</b>
 
 ### Test file example, the following test loops
+
+how to run: 
  
 <pre>begin:
         add %r1, %r0, $10 <br>
